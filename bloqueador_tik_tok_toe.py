@@ -1,13 +1,27 @@
 from random import randint
+from time import sleep
 
-print('====VAMOS JOGAR O JOGO DA VELHA===')
-print('Você vai precisar informar dois números entre 1 e 9.')
+def separador():
+    print('=' * 30)
+ 
+def apresentaJogo():
+    print('VAMOS JOGAR O JOGO DA VELHA')
+    separador()
+    sleep(1)
+    print('Você vai precisar informar um número entre 1 e 9.')
+    sleep(0.5)
+    print('Fique atendo!!!')
+    sleep(1)
 
-n1 = input('Informe o primeiro número: ')
-print(n1)
+def 
+separador()
+apresentaJogo()
+separador()
 
+'''
+n1 = int(input('Informe o primeiro número: '))
 n2 = randint(1,9)
-print('O número escolhido pelo computador foi: ',+ n2)
-print(n2)
+print('Número que o usuário digitou foi: ',+ n1)
+print('O número escolhido pelo computador foi: ',+ n2)'''
 
 print('FIM!!!')
