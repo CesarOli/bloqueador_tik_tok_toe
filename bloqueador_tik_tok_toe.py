@@ -10,18 +10,18 @@ def apresentaJogo():
     sleep(1)
     print('Você vai precisar informar um número entre 1 e 9.')
     sleep(0.5)
-    print('Fique atendo!!!')
+    print('Fique atento!!!')
     sleep(1)
 
-def 
+def jogada():
+    n1 = int(input('Informe a posição em que você deseja iniciar o jogo, representando de 1 a 9: '))
+    n2 = randint(1, 9)
+    return n1, n2
+
 separador()
 apresentaJogo()
 separador()
-
-'''
-n1 = int(input('Informe o primeiro número: '))
-n2 = randint(1,9)
-print('Número que o usuário digitou foi: ',+ n1)
-print('O número escolhido pelo computador foi: ',+ n2)'''
-
+n1, n2 = jogada()
+print('Você escolheu a posição representada pelo número', + n1)
+print('...o computador escolheu a posição representada pelo número ', n2)
 print('FIM!!!')
