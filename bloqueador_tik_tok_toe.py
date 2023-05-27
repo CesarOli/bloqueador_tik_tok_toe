@@ -18,7 +18,7 @@ def jogada():
     n2 = randint(1, 9)
     return n1, n2
 
-def bloquearJogada():
+def bloquearJogada(n1, n2):
     vencedora = [
         [1,2,3],[4,5,6],[7,8,9],
         [1,4,7],[2,5,8],[3,6,9]
