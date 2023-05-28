@@ -38,6 +38,10 @@ def bloquearJogada(n1, n2):
 separador()
 apresentaJogo()
 separador()
+sleep(1.5)
+print('...Aguarde um momento...')
+sleep(2.5)
+
 n1, n2 = jogada()
 pontoDeBloqueio = bloquearJogada(n1,n2)
 
