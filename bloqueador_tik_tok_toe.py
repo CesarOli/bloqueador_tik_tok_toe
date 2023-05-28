@@ -39,10 +39,14 @@ separador()
 apresentaJogo()
 separador()
 sleep(1.5)
-print('...Aguarde um momento...')
+print('...Carregando Informações...')
 sleep(2.5)
 
 n1, n2 = jogada()
+print('Aguarde o computador jogar...')
+sleep(2)
+print('PROCESSANDO JOGADAS, mais um momento por favor...')
+sleep(3)
 pontoDeBloqueio = bloquearJogada(n1,n2)
 
 if pontoDeBloqueio is not None:
