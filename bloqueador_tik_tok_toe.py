@@ -21,15 +21,23 @@ def jogada():
 def bloquearJogada(n1, n2):
     vencedora = [
         [1,2,3],[4,5,6],[7,8,9],
-        [1,4,7],[2,5,8],[3,6,9]
+        [1,4,7],[2,5,8],[3,6,9],
         [1,5,9],[3,5,7]
     ]
-
+    for jogada in vencedora:
+        if(n1 in vencedora) and (n2 in vencedora):
+            listaVazia = []
+            for elemento in vencedora:
+                if elemento != n1 and elemento != n2:
+                    listaVazia = elemento
+                    break
+            if listaVazia is not None:
+                return listaVazia
+    return None
 
 separador()
 apresentaJogo()
 separador()
 n1, n2 = jogada()
-print('Você escolheu a posição representada pelo número', + n1)
-print('...o computador escolheu a posição representada pelo número ', n2)
+
 print('FIM!!!')
