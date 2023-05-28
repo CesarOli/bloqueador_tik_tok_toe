@@ -29,7 +29,7 @@ def bloquearJogada(n1, n2):
             listaVazia = []
             for elemento in vencedora:
                 if elemento != n1 and elemento != n2:
-                    listaVazia = elemento
+                    listaVazia.append(elemento)
                     break
             if listaVazia is not None:
                 return listaVazia
@@ -39,5 +39,11 @@ separador()
 apresentaJogo()
 separador()
 n1, n2 = jogada()
+pontoDeBloqueio = bloquearJogada(n1,n2)
+
+if pontoDeBloqueio is not None:
+    print('Número do ponto que impede a vitória ', + pontoDeBloqueio,'.')
+else:
+    print('Não há ponto que impela a vitório dos jogadores.')
 
 print('FIM!!!')
