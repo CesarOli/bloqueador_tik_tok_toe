@@ -42,8 +42,9 @@ n1, n2 = jogada()
 pontoDeBloqueio = bloquearJogada(n1,n2)
 
 if pontoDeBloqueio is not None:
-    print('Número do ponto que impede a vitória', pontoDeBloqueio,'.')
+    print('O número do ponto que pode impedir que esses dois pontos ganhem o jogo, '
+        'foi representado pelo número', pontoDeBloqueio,'.')
 else:
-    print('Não há ponto que impeça a vitória dos jogadores.')
+   print('Não há ponto que impeça a vitória dos jogadores.')
 
 print('FIM!!!')
